@@ -1,0 +1,497 @@
+@import 'var';
+@import 'animation';
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 950px;
+    .box-gradient {
+        height: 850px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, #d90646, #eb3f2d);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        .head {
+            display: flex;
+            justify-content: space-between;
+            .heyU {
+                margin-top: 40px;
+                a {
+                    font-size: $font_sizeB;
+                    font-family: $font_Lato;
+                    font-style: bold;
+                    color: #fff;
+                    text-decoration: none;
+                    margin-left: 20px;
+                }
+                a:hover {
+                    color: rgb(14, 81, 168);
+                    text-shadow: 2px 2px #38130f;
+                    font-size: 50px;
+                } 
+            }
+            
+            .menu {
+                margin-top: 40px;
+                margin-right: 10px;
+                a {
+                    text-decoration: none;
+                    color: $color_m;
+                    text-transform: uppercase;
+                    font-family: $font_Lato;
+                    margin-left: 20px;
+                    font-size: $font_sizeS;
+                }
+                a:hover {
+                    color: rgb(14, 81, 168);
+                    font-size: 26px;
+                    font-weight: bold;
+                    text-shadow: 2px 2px #38130f;
+                } 
+            }
+        }
+    }
+    .block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+            .WithIphone {
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+            transform: translate(0%, -80%);
+            align-items: center;
+            .simple {
+                h1 {
+                    font-size: $font_sizeB;
+                    color: #fff;
+                }
+                small {
+                    color: #fff;
+                }
+                a {
+                    button {
+                        width: 170px;
+                        height: 50px;
+                        border-radius: 40px;
+                        margin-top: 50px;
+                        background: #fff;
+                        border: none;
+                        color:  #d90646;
+                        animation: butt 1s;
+                    }
+                }
+            }
+            .iphone {
+                width: 60%;
+                height: 800px;
+                background-image: url("../img/iPhone7Silver.png");
+                background-repeat: no-repeat;
+                background-size: contain; 
+            }
+            .iphone:hover {
+                animation: 0.1s vibro ease-out infinite;
+            }
+        }
+    }
+}
+.firstSection{
+    display: flex;
+    justify-content: center;
+    height: 430px;
+    width: 100%;
+    .easy-mess {
+        width: 80%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        .scrin {
+            width: 100%;
+            height: 600px;
+            .s-one {
+                width: 50%;
+                height: 602px;
+                background-image: url("../img/Messages.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .s-two {
+                width: 50%;
+                height: 638px;
+                background-image: url("../img/Conversation.png");
+                transform: translate(50%, -90%);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        .easy-text {
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            width: 80%;
+            height: 300px;
+            @include title();
+            p {
+                font-family: $font_Lato;
+                font-size: 14px;
+                line-height: 2;
+                color: #a0a0a0;
+                text-align: justify;
+            }
+        } 
+    }
+}
+.secondSection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 430px;
+    width: 100%;
+    .keep-touch {
+        width: 80%;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        .keep-text {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+            height: 300px;
+            @include title();
+            p {
+                font-family: $font_Lato;
+                font-size: 14px;
+                line-height: 2;
+                color: #a0a0a0;
+                text-align: justify;
+            }
+        }
+        .scr {
+            width: 100%;
+            height: 600px;
+            padding-left: 10%;
+            .scr-one {
+                width: 50%;
+                height: 550px;
+                background-image: url("../img/Groups.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .scr-two {
+                width: 60%;
+                height: 600px;
+                background-image: url("../img/Contactscopy.png");
+                transform: translate(50%, -90%);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        } 
+    }
+    .line {
+        width: 100%;
+        height: 2px;
+        border: 1px solid #e0e0e0;
+        background: #e0e0e0;
+    }
+}
+.thirdSection {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+    .what-say {
+        width: 100%;
+        margin-top: 20%;
+        text-align: center;
+        @include title();
+    }
+    .comments {
+        width: 100%;
+        height: 500px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        .first-comment {
+            float: left;
+            width: 30%;
+            .human-1 {
+                display: flex;
+                flex-wrap: nowrap;
+                width: 80%;
+                margin-left: 35px;
+                margin-bottom: 20px;
+                p {
+                    transform: translate(20px, 10px);
+                }
+            }
+            @include coment();
+        }
+        .second-comment {
+            float: left;
+            width: 30%;
+            .human-2 {
+                display: flex;
+                flex-wrap: nowrap;
+                width: 80%;
+                margin-left: 35px;
+                margin-bottom: 20px;
+                p {
+                    transform: translate(20px, 10px);
+                }
+            }
+            @include coment();
+        }
+        .third-comment {
+            float: left;
+            width: 30%;
+            .human-3 {
+                display: flex;
+                flex-wrap: nowrap;
+                width: 80%;
+                margin-left: 35px;
+                margin-bottom: 20px;
+                p {
+                    transform: translate(20px, 10px);
+                }
+            }
+            @include coment();
+        }
+    }
+}
+.fourthSection {
+    width: 100%;
+    height: 509px;
+    background-image: linear-gradient(to bottom, #d90646, #eb3f2d);
+    .blocking {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        .left {
+            width: 30%;
+            height: 400px;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            .conversation {
+                width: 75%;
+                height: 100px;
+                text-align: right;
+                margin-top: 30%;
+                img {
+                    position: absolute;
+                    transform: translate(30px, 0px);
+                }
+                h4 {
+                    font-family: $font_Lato;
+                    color: #fff;
+                }
+                p {
+                    font-family: $font_Lato;
+                    color: #f2a2b2;
+                }
+            }
+            .free-call {
+                width: 75%;
+                height: 100px;
+                text-align: right;
+                margin-top: 30%;
+                img {
+                    position: absolute;
+                    transform: translate(30px, 0px);
+                }
+                h4 {
+                    font-family: $font_Lato;
+                    color: #fff;
+                }
+                p {
+                    font-family: $font_Lato;
+                    color: #f2a2b2;
+                }
+            }
+        }
+        .Iphone7{
+            width: 420px;
+            height: 740px;
+            background-image: url("../img/iPhone7Silver1copy.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            float: left;
+            transform: translate(0px, -82px);
+        }
+        .right {
+            width: 30%;
+            height: 400px;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            .takePicture {
+                width: 75%;
+                height: 100px;
+                text-align: left;
+                margin-top: 30%;
+                margin-left: 20%;
+                a {
+                    position: absolute;
+                    transform: translate(-80px, 0px);
+                }
+                h4 {
+                    font-family: $font_Lato;
+                    color: #fff;
+                }
+                p {
+                    font-family: $font_Lato;
+                    color: #f2a2b2;
+                }
+            }
+            .sendVideo {
+                width: 75%;
+                height: 100px;
+                text-align: left;
+                margin-left: 20%;
+                margin-top: 30%;
+                a {
+                    position: absolute;
+                    transform: translate(-80px, 0px);
+                }
+                h4 {
+                    font-family: $font_Lato;
+                    color: #fff;
+                }
+                p {
+                    font-family: $font_Lato;
+                    color: #f2a2b2;
+                }
+            }
+        }
+    }
+}
+.subscribe {
+    margin-top: 10%;
+    .title {
+        width: 100%;
+        text-align: center;
+        @include title();
+    }
+    .text {
+        width: 100%;
+        text-align: center;
+        p {
+            margin-top: 30px;
+            font-family: $font_Lato;
+            color: #e0e0e0; 
+        }
+    }
+    .input {
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        input {
+            width: 470px;
+            height: 40px;
+            background: #f8f8f8;
+            border: none;
+            border-radius: 20px;
+            padding-left: 20px;
+        }
+        .btn-sub {
+            background-image: linear-gradient(to bottom, #d90646, #eb3f2d);
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            margin-left: -50px;
+            box-shadow: 0px 4px 8px 1px #eb3f2d;
+        }
+    }
+    .line {
+        width: 100%;
+        height: 2px;
+        border: 1px solid #e0e0e0;
+        background: #e0e0e0;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+}
+.download {
+    width: 100%;
+    height: 580px;
+    .boxIcon {
+        width: 100%;
+        margin-bottom: 70px;
+        a { 
+            text-decoration: none;
+            .icon {
+                margin: 0 auto;
+                width: 160px;
+                height: 150px;
+                background-image: linear-gradient(to bottom, #d90646, #eb3f2d);
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: 60px;
+                font-family: $font_Lato;
+                box-shadow: 0px 4px 8px 1px #eb3f2d;
+            }
+        }
+    }
+    text-align: center;
+    @include title();
+    .text {
+        width: 100%;
+        text-align: center;
+        p {
+            margin-top: 30px;
+            font-family: $font_Lato;
+            color: #bfbfbf; 
+        }
+    }
+    .appstore{
+        width: 100%;
+        height: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        img {
+            margin: 0 auto;
+        }
+    }
+    .line {
+        width: 100%;
+        height: 2px;
+        border: 1px solid #e0e0e0;
+        background: #e0e0e0;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    .menu-footer {
+        a {
+            margin-left: 30px;
+            text-decoration: none;
+            font-size:  20px;
+            font-family: $font_Lato;
+            font-style: bold;
+            text-transform: uppercase;
+            color: #363636;
+        }
+    }
+    .language {
+
+    }
+}
+
+.sub-menu {
+    //display: none;
+}
+@import 'media';

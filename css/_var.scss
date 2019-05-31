@@ -1,0 +1,71 @@
+$font_Lato: 'Lato', sans-serif;;
+$font_Ubuntu: 'Ubuntu', sans-serif;
+
+$font_sizeB: 50px;
+$font_sizeS: 20px;
+
+$color_m: #fdf0f3;
+
+$font-sizePoint: 50px;
+
+@mixin title {
+    h1 {
+        font-size: $font_sizeB;
+        font-family: $font_Lato;
+        font-weight: bold;
+        .point {
+            font-size: $font-sizePoint;
+            color: #d90646;
+        }
+    }
+}
+@mixin coment {
+    .coment{
+        border: 1px solid #e0e0e0;
+        margin-left: 40px;
+        float: left;
+        padding: 1.5em;
+        position: relative;
+        width: 90%;
+        &:before, &:after {
+            content: "";
+            display: block;
+            height: 0; 
+            left: 10%;
+            position: absolute;
+            width: 0; 
+        }
+        &:before {
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 6px solid #e0e0e0;
+            margin-left: -5px;
+            top: -6px;
+            z-index: 4;
+        }
+        &:after {
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 5px solid #fff;
+            margin-left: -3px;
+            top: -5px;
+            z-index: 5;
+        }
+        p {
+            font-family: $font_Lato;
+            font-size: 14px;
+            line-height: 2;
+            color: #a0a0a0;
+        }
+        a {
+            text-decoration: none;
+            color: #e54466;
+            font-weight: bold;
+        }
+    }
+    .coment:hover {
+        transform: translate(0px, 20px);
+        box-shadow: 0px 10px 15px 5px #e5e5e5;
+    }
+}
+
