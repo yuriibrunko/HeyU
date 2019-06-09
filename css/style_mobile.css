@@ -1,0 +1,150 @@
+.menu {
+  height: 50px;
+  width: 100%;
+  
+  z-index: 1000;
+}
+
+.menu__icon {
+   display: none;
+   width: 45px;
+   height: 35px;
+   position: relative;
+   cursor: pointer;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #eb3f2d;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+ }
+
+.menu__links-item {
+  
+    display: inline-block;
+    color: #333333;
+    font-size: 15px;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: 30px; 
+    text-decoration: none;
+}
+
+.menu__links-item:hover {
+    color:red;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+  display: block;  
+}
+
+@media screen and (max-width: 650px) {
+  .menu__icon{
+    display: inline-block;
+    margin-left: 50%;
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 435px) {
+    .menu__icon {
+      margin-top: 35%;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .menu__icon {
+      margin-top: 45%;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .conctainer{
+      display: flex;
+      flex-direction: column;
+      
+    }
+  }
+    @media screen and (max-width: 650px) {
+      .contact{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start ;
+        
+      }
+    }
+
+      @media (max-width: 400px){
+        .menu__links-item{
+          display: block;
+        }
+      }
+
+
+  .menu__links {
+    display: none;
+    width: 100%;
+    margin-top: -270px;
+    background-image: linear-gradient(to bottom, #d90646, #eb3f2d);
+  }
+  
+  .menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+@media (max-width:471px) {
+  .menu__links {
+  }
+}
+@media (max-width:399px) {
+  .menu__links {
+    text-align: center;
+  }
+}
+@media (max-width: 300px){
+  .menu__links-item{
+    display: block;
+  }
+}
