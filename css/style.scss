@@ -201,7 +201,7 @@ header {
 .thirdSection {
     width: 100%;
     height: 500px;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
     .what-say {
         width: 100%;
         margin-top: 20%;
@@ -223,8 +223,13 @@ header {
                 width: 80%;
                 margin-left: 35px;
                 margin-bottom: 20px;
-                p {
-                    transform: translate(20px, 10px);
+                a { 
+                    width: 35%;
+                    height: 90px;
+                    text-decoration: none;
+                        p {
+                        transform: translate(80px, -55px);
+                        }
                 }
             }
             @include coment();
@@ -238,8 +243,13 @@ header {
                 width: 80%;
                 margin-left: 35px;
                 margin-bottom: 20px;
-                p {
-                    transform: translate(20px, 10px);
+                a { 
+                    width: 35%;
+                    height: 90px;
+                    text-decoration: none;
+                        p {
+                        transform: translate(80px, -55px);
+                        }
                 }
             }
             @include coment();
@@ -253,8 +263,13 @@ header {
                 width: 80%;
                 margin-left: 35px;
                 margin-bottom: 20px;
-                p {
-                    transform: translate(20px, 10px);
+                a { 
+                    width: 35%;
+                    height: 90px;
+                    text-decoration: none;
+                        p {
+                        transform: translate(80px, -55px);
+                        }
                 }
             }
             @include coment();

@@ -136,7 +136,7 @@
 
 @media (max-width:436px) {
   .menu__links {
-    margin-top: -250px;
+    margin-top: -300px;
   }
 }
 @media (max-width:399px) {
@@ -144,7 +144,16 @@
     text-align: center;
   }
 }
-
+@media (max-width:369px) {
+  .menu__links {
+    margin-top: -340px;
+  }
+}
+@media (max-width:350px) {
+  .menu__links {
+    margin-top: -260px;
+  }
+}
 @media (max-width: 300px){
   .menu__links-item{
     display: block;

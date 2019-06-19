@@ -83,7 +83,7 @@
         .box-gradient {
             width: 100%;
             .head {
-                width: 30%;
+                width: 29%;
                 flex-wrap: wrap;
                 text-align: center;
                 margin: 0 auto;
@@ -107,6 +107,20 @@
             .WithIphone {
                 .simple {
                     margin-top: 170%;
+                }
+            }
+        }
+    }
+}
+@media (max-width:405px) {
+    header{
+        .box-gradient {
+            .head {
+                width: 42%;
+            }
+            @media (max-width:360px) {
+                .head {
+                    width: 47%;
                 }
             }
         }
@@ -410,6 +424,17 @@
         }
     }
 }
+@media (max-width:423px) {
+    .thirdSection {
+        height: 1200px;
+        margin-bottom: 100px;
+    }
+}
+@media (max-width:407px){
+    .thirdSection {
+        margin-bottom: 220px;
+    }
+}
 @media (max-width:336px) {
     .thirdSection {
         height: 1300px;
@@ -525,18 +550,32 @@
         }
     }
 }
+@media (max-width:360px) {
+    .fourthSection {
+        .blocking {
+            .Iphone7 {
+                margin-bottom: -100%;
+            }
+        }
+    }
+}
+@media (max-width:320px) {
+    .fourthSection {
+        .blocking {
+            .Iphone7 {
+                margin-bottom: -145%;
+            }
+        }
+    }
+}
 @media (max-width: 650px) {
     .download {
-        height: 735px;
-        .appstore {
-            margin-bottom: 35%;
-        }
+        height: 590px;
     }
 }
 @media (max-width:401px) {
     footer {
         .language {
-            transform: translate(-115px, 70px);
             button.dropdown-menu.show {
                 transform: translate(-130px, -85px);
             }
@@ -546,28 +585,14 @@
 @media (max-width:435px) {
     footer {
         .language {
-            margin-top: 32%;
+            margin-top: 13%;
         }
     }
 }
-@media (max-width:375px) {
+@media (max-width:369px) {
     footer {
         .language {
-            transform: translate(-95px, 70px);
-        }
-    }
-}
-@media (max-width:350px) {
-    footer {
-        .language {
-            margin-top: 42%;
-        }
-    }
-}
-@media (max-width:335px) {
-    footer {
-        .language {
-            transform: translate(-80px, 70px);
+            margin-top: 28%;
         }
     }
 }
