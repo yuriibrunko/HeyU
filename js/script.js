@@ -15,3 +15,8 @@ window.onload = function() {
       });
     });
   })(jQuery);
+
+  $('.btn-sub').on('click', function () {
+    //var email = $('.input').val();
+    console.log("Your email is: "+email);
+  });
